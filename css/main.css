@@ -52,7 +52,7 @@ body {
   height: 100%;
 }
 
-body.weather-bg {
+body.partly-cloudy {
   background-color: #d8c9d6;
   /* IE9, iOS 3.2+ */
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI5LjYlIiB5MT0iLTguNCUiIHgyPSI5MC40JSIgeTI9IjEwOC40JSI+PHN0b3Agc3RvcC1jb2xvcj0iI2RhZTJmOCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMTkxIi8+PHN0b3Agc3RvcC1jb2xvcj0iI2Q2YTRhNCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
@@ -65,6 +65,126 @@ body.weather-bg {
   background-image: linear-gradient(155deg, #dae2f8 19.1%, #d6a4a4 100%);
   background-image: -ms-linear-gradient(295deg, #dae2f8 19.1%, #d6a4a4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dae2f8', endColorstr='#d6a4a4', GradientType=1 );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.sunny {
+  background: -moz-linear-gradient(351deg, #F9D423 0%, #ff4e50 94%, #ff4e50 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #F9D423), color-stop(94%, #ff4e50), color-stop(100%, #ff4e50));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(351deg, #F9D423 0%, #ff4e50 94%, #ff4e50 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(351deg, #F9D423 0%, #ff4e50 94%, #ff4e50 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(99deg, #F9D423 0%, #ff4e50 94%, #ff4e50 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9D423', endColorstr='#ff4e50',GradientType=1 );
+  /* ie6-9 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.cloudy {
+  background: -moz-linear-gradient(156deg, #ECE9E6 0%, #FFFFFF 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #FFFFFF), color-stop(100%, #ECE9E6));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(156deg, #ECE9E6 0%, #FFFFFF 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(156deg, #ECE9E6 0%, #FFFFFF 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(294deg, #ECE9E6 0%, #FFFFFF 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#ECE9E6',GradientType=1 );
+  /* ie6-9 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.cloudy header h1 {
+  color: #222;
+}
+
+body.cloudy footer.copyright em {
+  color: #222;
+}
+
+body.snowing {
+  background: -moz-linear-gradient(315deg, #E6DADA 0%, #274046 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #E6DADA), color-stop(100%, #274046));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(315deg, #E6DADA 0%, #274046 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(315deg, #E6DADA 0%, #274046 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(135deg, #E6DADA 0%, #274046 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E6DADA', endColorstr='#274046',GradientType=0 );
+  /* ie6-9 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.rain {
+  background: -moz-linear-gradient(132deg, #616161 10%, #9BC5C3 100%, #9BC5C3 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #9BC5C3), color-stop(21%, #9BC5C3), color-stop(100%, #616161));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(132deg, #616161 10%, #9BC5C3 100%, #9BC5C3 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(132deg, #616161 10%, #9BC5C3 100%, #9BC5C3 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(318deg, #616161 10%, #9BC5C3 100%, #9BC5C3 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9BC5C3', endColorstr='#616161',GradientType=0 );
+  /* ie6-9 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.fog {
+  background: -moz-linear-gradient(165deg, #757F9A 0%, #D7DDE8 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #D7DDE8), color-stop(100%, #757F9A));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(165deg, #757F9A 0%, #D7DDE8 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(165deg, #757F9A 0%, #D7DDE8 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(285deg, #757F9A 0%, #D7DDE8 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D7DDE8', endColorstr='#757F9A',GradientType=1 );
+  /* ie6-9 */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body.thunderstorm {
+  background: -moz-linear-gradient(0deg, #232526 0%, #414345 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #232526), color-stop(100%, #414345));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, #232526 0%, #414345 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, #232526 0%, #414345 100%);
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: -webkit-gradient(linear, left top, right top, from(#232526), to(#414345));
+  background: -webkit-linear-gradient(left, #232526 0%, #414345 100%);
+  background: -moz-linear-gradient(left, #232526 0%, #414345 100%);
+  background: -o-linear-gradient(left, #232526 0%, #414345 100%);
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232526', endColorstr='#414345',GradientType=1 );
+  /* ie6-9 */
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -109,7 +229,11 @@ section.container .board .row .weather-state {
   width: 35%;
 }
 
-section.container .board .row .weather-state .sun {
+section.container .board .row .weather-state .summary {
+  height: 9.5rem;
+}
+
+section.container .board .row .weather-state .summary.partly-cloudy .sun {
   height: 75px;
   width: 75px;
   margin: auto;
@@ -125,7 +249,7 @@ section.container .board .row .weather-state .sun {
           transform: translate3d(-7px, 40px, 0);
 }
 
-section.container .board .row .weather-state .sun::before {
+section.container .board .row .weather-state .summary.partly-cloudy .sun::before {
   content: '';
   height: 75px;
   width: 75px;
@@ -150,7 +274,7 @@ section.container .board .row .weather-state .sun::before {
           box-shadow: 0 0 7px 0px rgba(104, 95, 0, 0.28);
 }
 
-section.container .board .row .weather-state .cloud {
+section.container .board .row .weather-state .summary.partly-cloudy .cloud {
   position: absolute;
   height: 35px;
   width: 70px;
@@ -167,7 +291,7 @@ section.container .board .row .weather-state .cloud {
   z-index: 9;
 }
 
-section.container .board .row .weather-state .cloud::before {
+section.container .board .row .weather-state .summary.partly-cloudy .cloud::before {
   content: '';
   position: absolute;
   height: 36px;
@@ -183,7 +307,7 @@ section.container .board .row .weather-state .cloud::before {
           box-shadow: 0px -4px 9px rgba(0, 0, 0, 0.05);
 }
 
-section.container .board .row .weather-state .cloud-mini {
+section.container .board .row .weather-state .summary.partly-cloudy .cloud-mini {
   position: absolute;
   height: 27px;
   width: 50px;
@@ -200,7 +324,7 @@ section.container .board .row .weather-state .cloud-mini {
   z-index: 1;
 }
 
-section.container .board .row .weather-state .cloud-mini::before {
+section.container .board .row .weather-state .summary.partly-cloudy .cloud-mini::before {
   content: '';
   height: 25px;
   width: 25px;
@@ -216,13 +340,16 @@ section.container .board .row .weather-state .cloud-mini::before {
           box-shadow: 0px -4px 9px rgba(0, 0, 0, 0.05);
 }
 
+section.container .board .row .weather-state .summary.cloudy .sun {
+  display: none !important;
+}
+
 section.container .board .row .weather-state .caption {
   margin: auto;
 }
 
 section.container .board .row .weather-state .caption h5.state {
   text-align: center;
-  margin-top: 4.5rem;
   font-size: 19px;
   font-weight: 100;
 }
