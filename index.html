@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App - Hanan</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500" rel="stylesheet">
@@ -21,24 +22,25 @@
     <section class="container">
         <div class="board">
             <div class="row">
-                <div class="weather-state">
+                <div id="weather" class="weather-state">
                     <div class="sun"></div>
                     <div class="cloud"></div>
                     <div class="cloud-mini"></div>
                     <div class="caption">
-                        <h5 class="state">Partially Cloudy</h5>
+                        <h5 id="summary" class="state">Partially Cloudy</h5>
                     </div>
                 </div>
-                <div class="degree"><h2>18°</h2></div>
+                <div id="temp" class="degree"><h2>00°</h2></div>
                 <div class="location">
                     <h5 class="title">Your Location</h5>
-                    <h2>Zurich<span class="state">, CH</span></h2>
+                    <h2 id="city"><small>Loading...</small></h2>, 
+                    <h2 id="code"></h2>
                 </div>
             </div>
             <div class="row-switch">
                 <label class="switch">
+                    <em class="fahrenheit"></em>
                     <input type="checkbox">
-                    
                     <div></div>
                 </label>
             </div>
@@ -51,6 +53,7 @@
         <em>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Hanan Mufti</em>
     </footer>
     <!--/ .Copyright -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

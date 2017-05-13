@@ -1,7 +1,7 @@
 {
   "name": "wheater-forecast",
   "version": "1.0.0",
-  "description": "",
+  "description": "Weather Forecast by Hanan Mufti ===============================",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,20 @@
   "author": "Hanan Mufti",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-ARTS/Weather-Forecast---Hanan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h-ARTS/Weather-Forecast---Hanan/issues"
+  },
+  "homepage": "https://github.com/h-ARTS/Weather-Forecast---Hanan#readme"
 }
