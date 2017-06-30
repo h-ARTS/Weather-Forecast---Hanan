@@ -7,4 +7,5 @@ The most challenging part was choosing the right data for the weather app.
 
 ##### Technologies: HTML/CSS (SCSS), JavaScript (MVC), gulp.js
 
-#### Demo: [Open this link]()
+#### Demo: [Open this link](http://h-arts.github.io/freecodecamp/weather-forecast/)
+
