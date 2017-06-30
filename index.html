@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="partly-cloudy">
+<body>
 
     <!-- Header Title -->
     <header>
@@ -23,11 +23,7 @@
         <div class="board">
             <div class="row">
                 <div id="weather" class="weather-state">
-                    <div class="summary partly-cloudy">
-                        <div class="sun"></div>
-                        <div class="cloud"></div>
-                        <div class="cloud-mini"></div>
-                    </div>
+                    <div id="summary-class" class="summary"></div>
                     <div class="caption">
                         <h5 id="summary" class="state">Cloudy</h5>
                     </div>
@@ -41,7 +37,7 @@
             </div>
             <div class="row-switch">
                 <label class="switch">
-                    <em class="fahrenheit"></em>
+                    <em class="celsius"></em>
                     <input type="checkbox">
                     <div></div>
                 </label>
@@ -56,6 +52,6 @@
     </footer>
     <!--/ .Copyright -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!--<script src="js/app.js"></script>-->
+    <script src="js/app.js"></script>
 </body>
 </html>
