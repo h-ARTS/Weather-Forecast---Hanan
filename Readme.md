@@ -5,7 +5,7 @@ FreeCodeCamp intermediate Project. The main goal was to create a weather app tha
 
 The most challenging part was choosing the right data for the weather app.
 
-##### Technologies: HTML/CSS (SCSS), JavaScript (MVC), gulp.js
+##### Technologies: HTML/CSS (SCSS), JavaScript (jQuery), gulp.js
 
 #### Demo: [Open this link](http://h-arts.github.io/freecodecamp/weather-forecast/)
 
